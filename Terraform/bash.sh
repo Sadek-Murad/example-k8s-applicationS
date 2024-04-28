@@ -29,9 +29,6 @@ if [ $? -eq 0 ]; then
 
     argocd app create guestbook --repo https://github.com/argoproj/argocd-example-apps.git --path guestbook --dest-server https://kubernetes.default.svc --dest-namespace default --server a6fb5f83daf7846039a463aea330db24-953897181.eu-central-1.elb.amazonaws.com --insecure
     
-
-    # Überprüfung und Abgabe
-    # Hier sollten die Überprüfungen und die Abgabe des Repositories und der Screenshots erfolgen
 else
     echo "Terraform-Ausführung fehlgeschlagen. Bitte überprüfen Sie die Fehlermeldungen."
 fi
